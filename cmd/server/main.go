@@ -1,18 +1,33 @@
 package main
 
 import (
-	"log/slog"
-
+	"github.com/joho/godotenv"
+	"github.com/alinasheleg/kinotover-go/internal/core/logger"
 	core_server "github.com/alinasheleg/kinotover-go/internal/core/server"
+	core_database "github.com/alinasheleg/kinotover-go/internal/core/database"
 )
 
 func main() {
+    if err := logger.Init("logs"); err != nil {
+        panic("failed to init logger: " + err.Error())
+    }
+	db,err := core_database.NewDatabase()
+	if err != nil {
+		panic("failed to connect to database: " + err.Error())
+	}
+	defer db.Close()
 
-	slog.Info("Starting server...")
 
-	server := core_server.NewServer()
-	if err := server.ListenAndServe(); err != nil {
-		slog.Error("Server error", "error", err)
-	}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-	
+    logger.Log.Info("Starting server", "addr", ":8080")
+
+    server := core_server.NewServer(db)
+
+    if err := server.ListenAndServe(); err != nil {
+        logger.Log.Error("Server stopped", "error", err)
+    }
+}
+func init() {
+	if err := godotenv.Load(); err != nil {	
+		logger.Log.Warn("No .env file found, using environment variables")
+	}
 }
