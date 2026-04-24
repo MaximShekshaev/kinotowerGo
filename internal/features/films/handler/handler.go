@@ -3,7 +3,7 @@ package film_handler
 import (
 	"net/http"
 
-	film_service "github.com/alinasheleg/kinotover-go/internal/features/films/service"
+	film_service "github.com/MaximShekshaev/kinotowerGo/internal/features/films/service"
 )
 
 type FilmHandler interface {

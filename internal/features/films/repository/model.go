@@ -3,7 +3,7 @@ package film_repository
 import (
 	"time"
 
-	"github.com/alinasheleg/kinotover-go/internal/core/domain"
+	"github.com/MaximShekshaev/kinotowerGo/internal/core/domain"
 )
 
 type Film struct {

@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/alinasheleg/kinotover-go/internal/core/domain"
-	core_http_response "github.com/alinasheleg/kinotover-go/internal/core/http/response"
+	"github.com/MaximShekshaev/kinotowerGo/internal/core/domain"
+	core_http_response "github.com/MaximShekshaev/kinotowerGo/internal/core/http/response"
 )
 
 func (h *filmHandler) GetFilms(w http.ResponseWriter, r *http.Request) {

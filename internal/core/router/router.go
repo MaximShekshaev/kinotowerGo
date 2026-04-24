@@ -3,8 +3,8 @@ package core_router
 import (
 	"net/http"
 
-	mw "github.com/alinasheleg/kinotover-go/internal/core/middleware"
-	film_handler "github.com/alinasheleg/kinotover-go/internal/features/films/handler"
+	mw "github.com/MaximShekshaev/kinotowerGo/internal/core/middleware"
+	film_handler "github.com/MaximShekshaev/kinotowerGo/internal/features/films/handler"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 )

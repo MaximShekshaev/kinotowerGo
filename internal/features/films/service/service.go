@@ -1,8 +1,8 @@
 package film_service
 
 import (
-	"github.com/alinasheleg/kinotover-go/internal/core/domain"
-	film_repository "github.com/alinasheleg/kinotover-go/internal/features/films/repository"
+	"github.com/MaximShekshaev/kinotowerGo/internal/core/domain"
+	film_repository "github.com/MaximShekshaev/kinotowerGo/internal/features/films/repository"
 )
 
 type FilmService interface {

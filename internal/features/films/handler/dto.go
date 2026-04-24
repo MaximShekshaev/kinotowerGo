@@ -3,7 +3,7 @@ package film_handler
 import (
 	"time"
 
-	"github.com/alinasheleg/kinotover-go/internal/core/domain"
+	"github.com/MaximShekshaev/kinotowerGo/internal/core/domain"
 )
 
 type FilmDTO struct {

@@ -6,7 +6,7 @@ import (
     "net/http"
     "time"
 
-	"github.com/alinasheleg/kinotover-go/internal/core/logger"
+	"github.com/MaximShekshaev/kinotowerGo/internal/core/logger"
     "github.com/go-chi/chi/v5/middleware"
 )
 

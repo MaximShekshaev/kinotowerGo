@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/alinasheleg/kinotover-go/internal/core/domain"
+	"github.com/MaximShekshaev/kinotowerGo/internal/core/domain"
 	"github.com/jmoiron/sqlx"
 )
 

@@ -3,10 +3,10 @@ package core_server
 import (
 	"net/http"
 
-	core_router "github.com/alinasheleg/kinotover-go/internal/core/router"
-	film_handler "github.com/alinasheleg/kinotover-go/internal/features/films/handler"
-	film_repository "github.com/alinasheleg/kinotover-go/internal/features/films/repository"
-	film_service "github.com/alinasheleg/kinotover-go/internal/features/films/service"
+	core_router "github.com/MaximShekshaev/kinotowerGo/internal/core/router"
+	film_handler "github.com/MaximShekshaev/kinotowerGo/internal/features/films/handler"
+	film_repository "github.com/MaximShekshaev/kinotowerGo/internal/features/films/repository"
+	film_service "github.com/MaximShekshaev/kinotowerGo/internal/features/films/service"
 	"github.com/jmoiron/sqlx"
 )
 

@@ -2,9 +2,9 @@ package main
 
 import (
 	"github.com/joho/godotenv"
-	"github.com/alinasheleg/kinotover-go/internal/core/logger"
-	core_server "github.com/alinasheleg/kinotover-go/internal/core/server"
-	core_database "github.com/alinasheleg/kinotover-go/internal/core/database"
+	"github.com/MaximShekshaev/kinotowerGo/internal/core/logger"
+	core_server "github.com/MaximShekshaev/kinotowerGo/internal/core/server"
+	core_database "github.com/MaximShekshaev/kinotowerGo/internal/core/database"
 )
 
 func main() {

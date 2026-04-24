@@ -3,7 +3,7 @@ package film_repository
 import (
 	"fmt"
 
-	"github.com/alinasheleg/kinotover-go/internal/core/domain"
+	"github.com/MaximShekshaev/kinotowerGo/internal/core/domain"
 )
 
 func (r *filmRepository) GetFilmByID(id int) (domain.Film, error) {

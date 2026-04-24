@@ -3,7 +3,7 @@ package film_service
 import (
 	"strings"
 
-	"github.com/alinasheleg/kinotover-go/internal/core/domain"
+	"github.com/MaximShekshaev/kinotowerGo/internal/core/domain"
 )
 
 func (s *filmService) GetFilms(filter domain.Filter) ([]domain.Film, int, error) {
