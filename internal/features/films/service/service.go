@@ -6,7 +6,7 @@ import (
 )
 
 type FilmService interface {
-	GetFilms() ([]domain.Film, error)
+	GetFilms(filter domain.Filter) ([]domain.Film, int, error)
 }
 
 type filmService struct {

@@ -3,8 +3,8 @@ package domain
 type Filter struct {
 	Page int
 	Size int
-	SoftBt string
-	SoftDir string
+	SortBy string
+	SortDir string
 	CountryID int
 	CategoryID int
 	Search string

@@ -19,7 +19,10 @@ func NewDatabase() (*sqlx.DB, error) {
 	db, err := sqlx.Connect("postgres", connectionString)
 	if err != nil {
 		return nil, fmt.Errorf("failed to connect to database: %w", err)
-
+	}
+	err = db.Ping()
+	if err != nil {
+		return nil, fmt.Errorf("failed to ping database: %w", err)
 	}
 	
 

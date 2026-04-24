@@ -15,7 +15,7 @@ func main() {
 	if err != nil {
 		panic("failed to connect to database: " + err.Error())
 	}
-	defer db.Close()
+	defer db.DB.Close()
 
 
     logger.Log.Info("Starting server", "addr", ":8080")
